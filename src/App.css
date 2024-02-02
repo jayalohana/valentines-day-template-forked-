@@ -1,42 +1,47 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.valentine-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fbd3e9; /* Pastel pink background */
+  color: #333; /* Darker text color for contrast */
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Adds a playful font style */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.valentine-text {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #5d3a3a; /* Dark pink/maroon for emphasis */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px; /* Rounded corners for the buttons */
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth transition for interaction */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button:hover {
+  transform: scale(1.1); /* Slightly enlarge buttons on hover */
 }
 
-.card {
-  padding: 2em;
+.yesButton {
+  background-color: #ffcad4; /* Soft pink */
+  color: #5d3a3a; /* Text color for buttons */
+  font-weight: bold;
 }
 
-.read-the-docs {
-  color: #888;
+.noButton {
+  background-color: #bde0fe; /* Soft blue for contrast */
+  color: #405d9b; /* Text color for buttons */
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Slightly rounded corners for images */
 }
